@@ -1,28 +1,163 @@
 <!-- ////////////// HEADER ////////////// -->
-header.bg-light
-	.container
-		nav.navbar.navbar-expand-lg.navbar-light
-			a.navbar-brand(href="#") 
-				img(src="./img/logo.png", alt="Logo")
-			//- Đây là nút sẽ hiển thị trong mobile
-			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
-				span.fa.fa-bars
-			#fullStackMenu.collapse.navbar-collapse
-				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
-				.mr-auto
-				ul.navbar-nav
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
+header
+	.container-fluid
+			.row.header1.bg-light
+				.col-md-5.col-lg-4
+					.row
+						a.nav-link(href="#")
+							i.fa.fa-volume-control-phone
+							span.pl-1 1800 1162 
+								b (miễn phí)
+						a.nav-link(href="#")
+							i.fa.fa-home
+							span.pl-1 Hệ thống 
+								b 96 
+								span cửa hàng
+				.col-md-1.col-lg-4
+				.col-md-3.col-lg-2
+					.row.justify-content-end
+						a.nav-link(href="#") 
+							i.fa.fa-user-plus
+							span.pl-1 Signup
+						a.nav-link(href="#")
+							i.fa.fa-user-circle
+							span.pl-1 Signin
+				.col-md-3.col-lg-2.d-flex.justify-content-center
+					a.nav-link(href="#")
+						i.fa.fa-shopping-cart
+						span.pl-1 Giỏ hàng
+						b (0)
+			.row.header2
+				.form-search-2
+					input#search_show.form-control(type="search", name="")
+					i.fa.fa-search
+					a.nav-link(href="#")
+						i.menu-cart.fa.fa-shopping-cart
+				nav.navbar.navbar-expand-lg.navbar-light.w-100
+					a.navbar-brand(href="#") 
+						figure
+							img.img-fluid(src="./img/download.png", alt="Logo")
+					//- Đây là nút sẽ hiển thị trong mobile
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+						span.fa.fa-bars
+					#fullStackMenu.collapse.navbar-collapse
+						//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+						.mr-auto
+						ul.navbar-nav.d-flex.justify-content-center
+							li.nav-item
+								a.nav-link(href="index.html")
+									| HÀNG MỚI VỀ
+							li.nav-item.muiten.show-menu-giay
+								a.nav-link(href="#") GIÀY
+									i.fa.fa-chevron-down
+								.menu-hide-giay
+									.row
+										.col-md-3
+											ul.navbar-nav
+												li.nav-item.list-giai
+													a.nav-link.menu-sub-a(href="#") Giày cao gót
+													a.nav-link.menu-sub-a(href="#") Giày xăng đan
+													a.nav-link.menu-sub-a(href="#") Giày xăng đan
+													a.nav-link.menu-sub-a(href="#") Giày xăng búp bê
+													a.nav-link.menu-sub-a(href="#") Giày xăng boots
+													a.nav-link.menu-sub-a(href="#") Giày xăng guốc
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-giay1.jpg")
+												span.chunho
+													| dép mũi vuông
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-giay2.jpg")
+												span.chunho
+													| Giày cao gót
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-giay3.jpg")
+												span.chunho
+													| Giày mũi nhọn
+							li.nav-item.muiten.show-menu-tui
+								a.nav-link(href="#") TÚI
+									i.fa.fa-chevron-down
+								.menu-hide-tui
+									.row
+										.col-md-3
+											ul.navbar-nav
+												li.nav-item.list-giai
+													a.nav-link.menu-sub-a(href="#") Túi cở nhỏ
+													a.nav-link.menu-sub-a(href="#") Túi cở trung bình
+													a.nav-link.menu-sub-a(href="#") Túi cở lớn
+													a.nav-link.menu-sub-a(href="#") Balo nam
+													a.nav-link.menu-sub-a(href="#") Balo nữ
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-tui1.jpg")
+												span
+													| Balo du lịch
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-tui2.jpg")
+												span
+													| Balo Laptop
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-tui3.jpg")
+												span
+													| Túi thời trang
+							li.nav-item.muiten.show-menu-phukien
+								a.nav-link(href="#") PHỤ KIỆN
+									i.fa.fa-chevron-down
+								.menu-hide-phukien
+									.row
+										.col-md-3
+											ul.navbar-nav
+												li.nav-item.list-giai
+													a.nav-link.menu-sub-a(href="#") Mắc kính
+													a.nav-link.menu-sub-a(href="#") Dây nịch
+													a.nav-link.menu-sub-a(href="#") Trang sức
+													a.nav-link.menu-sub-a(href="#") Vớ
+													a.nav-link.menu-sub-a(href="#") Bao tay
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-phukien1.jpg")
+												span
+													| Balo du lịch
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-phukien2.jpg")
+												span
+													| Balo Laptop
+										.col-md-3
+											a.nav-link.menu-sub-a(href="#")
+												figure
+													img.img-fluid(src="./img/menu-hide-phukien3.jpg")
+												span
+													| Túi thời trang
+							li.nav-item
+								a.nav-link(href="#") BỘ SƯU TẬP
+							li.nav-item
+								a.nav-link(href="about.html") MEMBERSHIP
+						.mr-auto
+						.form-search-1
+							input.form-control(type="search", name="")
+							i.fa.fa-search
+								//- MENU _ REPONESIVE_MD
+			.menu-reponsive-main
+				ul.nav.flex-column
 					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
+						a.nav-link.active(href='#') Active
 					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
+						a.nav-link(href='#') Link
 					li.nav-item
-						a.nav-link(href="contact.html") Liên hệ
-<!-- ////////////// HEADER ////////////// -->
+						a.nav-link(href='#') Link
+
+		
+			

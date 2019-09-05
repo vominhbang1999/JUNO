@@ -1,10 +1,130 @@
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 2rem
-	+media-breakpoint-up(md)
+	// HEADER 1// HEADER 1// HEADER 1// HEADER 1// HEADER 1
+	.header1
+		z-index: 200 !important
+		background-color: #f2f2f2
+		.nav-link
+			font-size: 12px
+			font-family: 'Quicksand', sans-serif !important
+			color: black
+		+media-breakpoint-down(sm)
+			display: none
+			padding: 0.5rem 0rem
+		+media-breakpoint-down(md)
+			padding: 0.5rem 0rem
+	// HEADER 1// HEADER 1// HEADER 1// HEADER 1
+
+	// HEADER 2// HEADER 2// HEADER 2// HEADER 2
+	.header2
+		padding: 10px 40px
+		position: relative
+		background-color: #ffffff
+		z-index: 200 
+		button.navbar-toggler
+			position: absolute
+			left: -2rem
+			top: 0.7rem
+			color: black
+			border: 2px solid black
+			padding: 0.4rem 1rem
+			+media-breakpoint-up(md)
+				position: unset
 		.navbar-brand
-			img 
-				max-height: 3rem
+			img
+				width: 150px
+				height: 23px
+			+media-breakpoint-down(md)
+				padding-left: 3rem
+		.form-search-1,.form-search-2
+			position: relative
+			input
+				border-radius: 20px
+			i
+				position: absolute
+				top: 0.6rem
+				right: 1rem
+				color: gray
+			&:hover
+				cursor: pointer
+		ul.navbar-nav
+			color: #252a2b
+			font-size: 15px
+			font-weight: bold
+			li.nav-item
+				.nav-link
+					padding: 1rem 1.5rem
+					+media-breakpoint-down(lg)
+						padding: 1rem 0.5rem
+					color: #252a2bd1 !important
+					&:hover
+						color: #252a2b !important
+					i 
+						font-size: 10px
+						margin: 0px 0px 5px 5px
+				&:hover
+					box-shadow: 0px 3px
+					+media-breakpoint-down(md)
+						box-shadow: 0px 0px
+		+media-breakpoint-down(md)
+			.form-search-1
+				display: none
+		+media-breakpoint-down(md)
+			.form-search-2
+				display: block
+	.form-search-2
+		position: absolute !important
+		top: 1.7rem
+		right: 7rem
+		input
+			display: none
+		input.active
+			display: block
+		i
+			font-size: 20px
+			z-index: 10
+			+media-breakpoint-down(md)
+				right: -4rem !important
+			+media-breakpoint-up(md)
+				right: 7rem !important
+			&:hover
+				cursor: pointer
+		.nav-link
+			position: absolute
+			+media-breakpoint-down(md)
+				right: -2rem !important
+			+media-breakpoint-up(md)
+				right: 5rem !important
+		+media-breakpoint-up(lg)
+			i
+				display: none
+
+
+	// HEADER 2// HEADER 2// HEADER 2// HEADER 2// HEADER 2// HEADER 2
+
+	// MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE 
+
+	.show-menu-giay,.show-menu-tui,.show-menu-phukien
+		box-shadow: 0px 0px !important
+		&:hover 
+			.menu-hide-giay,.menu-hide-tui,.menu-hide-phukien
+				top: 3.4rem
+				opacity: 1
+				transition: all 0.6s ease-in-out
+				visibility: visible
+		.menu-hide-giay, .menu-hide-tui , .menu-hide-phukien
+			position: absolute
+			width: 100%
+			left: 0rem
+			top: 4rem
+			padding: 0rem 17rem
+			opacity: 0
+			visibility: hidden
+			.list-giai
+				&:hover
+					box-shadow: 0px 0px !important
+			.menu-sub-a
+				padding: 0 !important
+				font-size: 15px
+				line-height: 3
+
+	// MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE 

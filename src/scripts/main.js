@@ -1,31 +1,47 @@
 // Main
 $(document).ready(function () {
-	// Phần Slider
-	$('.home-slider .owl-carousel').owlCarousel({
-		items: 1,
-		nav: false,
-		dots: true,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+	$('.form-search-2 i.fa.fa-search').on('click', function () {
+		$('#search_show').addClass('active');
+		$(this).click(function() {
+			$('#search_show').removeClass('active');
+		})
 	});
-	// Phần Clients
-	$('.home-clients .owl-carousel').owlCarousel({
-		items: 1,
-		nav: true,
-		dots: false,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-		responsive: {
-			// breakpoint from 480 up
-			480: {
-				items: 2,
-			},
-			// breakpoint from 768 up
-			768: {
-				items: 4,
-			},
-			// breakpoint from 992 up
-			992: {
-				items: 6,
-			}
+
+	// SHOW MENU GIÀY ẨN 
+	$('.show-menu-giay').hover(function () {
+			$('.show-menu-giay .menu-hide-giay').css({
+				'z-index' : '20',
+			})			
+		}, function () {
+			$('.show-menu-giay .menu-hide-giay').css({
+				'z-index' : '0',
+				
+			})
 		}
-	});
+	);
+	$('.show-menu-tui').hover(function () {
+			$('.show-menu-tui .menu-hide-tui').css({
+				'z-index' : '20',
+			})			
+		}, function () {
+			$('.show-menu-tui .menu-hide-tui').css({
+				'z-index' : '0',
+			})
+		}
+	);
+	$('.show-menu-phukien').hover(function () {
+			$('.show-menu-phukien .menu-hide-phukien').css({
+				'z-index' : '20',
+			})			
+		}, function () {
+			$('.show-menu-phukien .menu-hide-phukien').css({
+				'z-index' : '0',
+			})
+		}
+	);
+	$('.muiten').hover(function () {
+			$(this).find('i').css({'transform' : 'rotate(180deg)', 'transition' : 'all 0.5s ease-in-out'})
+		}, function () {
+			$(this).find('i').css({'transform' : 'rotate(0deg)', 'transition' : 'all 0.5s ease-in-out'})
+		})
 });
