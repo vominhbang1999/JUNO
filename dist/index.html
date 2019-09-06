@@ -103,7 +103,7 @@
           </div>
           <nav class="navbar navbar-expand-lg navbar-light w-100"><a class="navbar-brand" href="#"> 
               <figure><img class="img-fluid" src="./img/download.png" alt="Logo"></figure></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
             <div class="collapse navbar-collapse" id="fullStackMenu">
               <div class="mr-auto"></div>
               <ul class="navbar-nav d-flex justify-content-center">
@@ -170,11 +170,63 @@
           </nav>
         </div>
         <div class="menu-reponsive-main">
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          </ul>
+          <div class="menu-reponsive-main-1">
+            <div class="title_reponsive-main"><span>MENU</span></div>
+            <ul class="nav flex-column content_reponsive-main">
+              <li class="nav-item"><a class="nav-link active" href="#">hàng mới về</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">giày </a><a class="show_menu_responsive show-menu-detail-giay" href="#"><i class="fa fa-chevron-right"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">túi</a><a class="show_menu_responsive show-menu-detail-tui" href="#"><i class="fa fa-chevron-right"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">phụ kiện</a><a class="show_menu_responsive show-menu-detail-phukien" href="#"><i class="fa fa-chevron-right"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">bộ sưu tập</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">membership</a></li>
+              <li class="nav-item thongtin_menu-responsive-main"><a class="nav-link" href="#"><i class="fa fa-volume-control-phone"></i><span class="pl-1">1800 1162 <b>(miễn phí)</b></span></a></li>
+              <li class="nav-item thongtin_menu-responsive-main"><a class="nav-link" href="#"><i class="fa fa-home"></i><span class="pl-1">Hệ thống <b>96 </b><span>cửa hàng</span></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-reponsive-extra">
+          <div class="menu-reponsive-extra-giay">
+            <div class="title_reponsive-extra-giay"><a class="nav-link p-0"><i class="fa fa-chevron-left"></i><span>GIÀY</span></a>
+              <ul class="navbar-nav content_reponsive-extra-giay">
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày cao gót</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày xăng đan</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày xăng đap</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày xăng búp bê</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày xăng boots</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Giày xăng guốc</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-reponsive-extra-tui">
+            <div class="title_reponsive-extra-tui"><a class="nav-link p-0"><i class="fa fa-chevron-left"></i><span>TÚI</span></a>
+              <ul class="navbar-nav content_reponsive-extra-tui">
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Túi cở nhỏ</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Túi cở trung bình</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Túi cở lớn</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Balo nam</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Balo nữ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-reponsive-extra-phukien">
+            <div class="title_reponsive-extra-phukien"><a class="nav-link p-0"><i class="fa fa-chevron-left"></i><span>PHỤ KIỆN</span></a>
+              <ul class="navbar-nav content_reponsive-extra-phukien">
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Mắc kính</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Dây nịch</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Trang sức</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Vớ</a></li>
+                <li class="nav-item"><a class="nav-link menu-sub-a" href="#">Bao tay</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="show-block-search">
+          <div class="boc-block-search">
+            <div class="title-block-search p-4"><span>TÌM KIẾM</span><i class="fa fa-times"></i></div>
+            <div class="form-block-search pl-2 pr-2">
+              <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm"><i class="fa fa-search"></i>
+            </div>
+          </div>
         </div>
       </div>
     </header><!-- ////////////// End Header ////////////// -->
@@ -183,7 +235,7 @@
       <section class="banner">
         <div class="container-fluid">
           <div class="row">
-            <figure></figure>
+            <figure><img class="img-fluid" src="./img/banner_home.jpg" alt=""></figure>
           </div>
         </div>
       </section>

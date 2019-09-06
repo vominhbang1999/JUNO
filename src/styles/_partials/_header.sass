@@ -19,7 +19,22 @@ header
 		padding: 10px 40px
 		position: relative
 		background-color: #ffffff
-		z-index: 200 
+		transition: right 0.5s ease-in-out
+		&:before
+			content: ''
+			display: block
+			background-color: #1a191900
+			position: absolute
+			z-index: 0
+			top: 0.1rem
+			right: 116px
+			width: 63%
+			height: 100%
+		+media-breakpoint-up(md)
+			left: 0rem
+			right: 0rem !important
+			background-color: rgba(26, 25, 25, 0) !important
+			position: unset !important
 		button.navbar-toggler
 			position: absolute
 			left: -2rem
@@ -102,7 +117,6 @@ header
 	// HEADER 2// HEADER 2// HEADER 2// HEADER 2// HEADER 2// HEADER 2
 
 	// MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE 
-
 	.show-menu-giay,.show-menu-tui,.show-menu-phukien
 		box-shadow: 0px 0px !important
 		&:hover 
@@ -128,3 +142,136 @@ header
 				line-height: 3
 
 	// MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE 
+
+	// MENU RESPONSIVE //// MENU RESPONSIVE //// MENU RESPONSIVE //
+	+media-breakpoint-up(md)
+		.menu-reponsive-main,.menu-reponsive-extra
+			display: none
+	.menu-reponsive-main,.menu-reponsive-extra
+		visibility: hidden
+		transform: translateX(-400px)
+		transition: all 0.4s ease-in-out
+		position: absolute
+		top: 0rem
+		left: -1rem
+		width: 80%
+		height: 100%
+		// background-color: aliceblue
+		.menu-reponsive-main-1,.menu-reponsive-extra-giay,.menu-reponsive-extra-tui,.menu-reponsive-extra-phukien
+			background-color: #f8f9fa
+			width: 80% 
+			position: absolute
+			left: 0rem
+			height: 100%
+			.title_reponsive-main,.title_reponsive-extra-giay,.title_reponsive-extra-tui,.title_reponsive-extra-phukien
+				background-color: black
+				span
+					text-transform: uppercase
+					font-family: 'Quicksand', sans-serif !important
+					color: white
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 0.5rem 0rem
+			.content_reponsive-main,.content_reponsive-extra-giay,.content_reponsive-extra-tui,.content_reponsive-extra-phukien
+				background-color: #f8f9fa
+				.nav-item
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						left: 0rem
+						right: 0rem
+						border-bottom: 1px dotted #00000040
+					
+				.nav-link,.show_menu_responsive
+					text-transform: uppercase
+					font-family: 'Quicksand', sans-serif !important
+					color: black
+					padding: 0.5rem 1rem
+					justify-content: center
+					align-items: center
+					display: inline-flex
+				.show_menu_responsive
+					padding: 0.7rem 0rem !important
+					border-left: 1px dotted #00000040
+					position: absolute
+					right: 2rem
+					text-decoration: none
+					color: #00000082
+					i
+						&:before
+							padding: 0 0 0 2rem
+				.thongtin_menu-responsive-main
+					background-color: #f2f2f2
+					padding: 0rem 0rem
+					margin: 1px 0 0 0
+					+media-breakpoint-down(sm)
+						display: block
+					&:after
+						border-bottom: 1px solid #fff !important
+					.nav-link
+						font-size: 12px
+						font-family: 'Quicksand', sans-serif !important
+						color: black
+		// HOVER HIỂN THỊ MENU CHI TIẾT
+		.menu-reponsive-extra-giay,.menu-reponsive-extra-tui,.menu-reponsive-extra-phukien
+			visibility: hidden
+			transition: all 0.4s ease-in-out
+			opacity: 0
+			left: 3rem
+			.fa-chevron-left
+				position: absolute
+				left: 2.5rem
+				top: 0.8rem
+				color: white
+				cursor: pointer
+	.menu-reponsive-extra
+		visibility: hidden
+		transform: translateX(-15px)
+	// MENU RESPONSIVE //// MENU RESPONSIVE //// MENU RESPONSIVE //
+	// FORM SEARCH //// FORM SEARCH //// FORM SEARCH //
+	.show-block-search
+		width: 0%
+		height: 100%
+		background-color: #f5f5f50a
+		position: absolute
+		right: 0rem
+		overflow: hidden
+		z-index: 99
+		top: 0rem
+		visibility: hidden
+		+media-breakpoint-up(md)
+			display: none
+		.boc-block-search
+			transition: all 0.3s ease-in-out
+			position: absolute
+			right: -20rem
+			height: 100%
+			background-color: white
+			.title-block-search
+				span
+					font-size: 18px
+					font-family: 'Quicksand', sans-serif !important
+				i
+					position: absolute
+					right: 2rem
+					font-size: 19px
+					cursor: pointer
+			.form-block-search
+				position: relative
+				input
+					background: #f5f5f5
+					color: #252a2b
+					width: 100%
+					border: none
+					height: 55px
+					padding: 0 55px 0 20px
+					margin: 0
+					border-radius: 0
+				i
+					position: absolute
+					top: 1.2rem
+					right: 1rem
+					font-size: 20px
+					color: #cbcbcb

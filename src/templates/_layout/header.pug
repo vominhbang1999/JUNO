@@ -38,7 +38,7 @@ header
 						figure
 							img.img-fluid(src="./img/download.png", alt="Logo")
 					//- Đây là nút sẽ hiển thị trong mobile
-					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+					button.navbar-toggler(type="button" data-toggle="collapse" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
 						span.fa.fa-bars
 					#fullStackMenu.collapse.navbar-collapse
 						//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
@@ -149,15 +149,98 @@ header
 						.form-search-1
 							input.form-control(type="search", name="")
 							i.fa.fa-search
-								//- MENU _ REPONESIVE_MD
+			//- MENU _ REPONESIVE_MD //- MENU _ REPONESIVE_MD //- MENU _ REPONESIVE_MD
 			.menu-reponsive-main
-				ul.nav.flex-column
-					li.nav-item
-						a.nav-link.active(href='#') Active
-					li.nav-item
-						a.nav-link(href='#') Link
-					li.nav-item
-						a.nav-link(href='#') Link
-
-		
-			
+				.menu-reponsive-main-1
+					.title_reponsive-main
+						span MENU
+					ul.nav.flex-column.content_reponsive-main
+						li.nav-item
+							a.nav-link.active(href='#') hàng mới về
+						li.nav-item
+							a.nav-link(href='#') giày 
+							a.show_menu_responsive.show-menu-detail-giay(href="#")
+								i.fa.fa-chevron-right
+						li.nav-item
+							a.nav-link(href='#') túi
+							a.show_menu_responsive.show-menu-detail-tui(href="#")
+								i.fa.fa-chevron-right
+						li.nav-item
+							a.nav-link(href='#') phụ kiện
+							a.show_menu_responsive.show-menu-detail-phukien(href="#")
+								i.fa.fa-chevron-right
+						li.nav-item
+							a.nav-link(href='#') bộ sưu tập
+						li.nav-item
+							a.nav-link(href='#') membership
+						li.nav-item.thongtin_menu-responsive-main
+							a.nav-link(href="#")
+								i.fa.fa-volume-control-phone
+								span.pl-1 1800 1162 
+									b (miễn phí)
+						li.nav-item.thongtin_menu-responsive-main
+							a.nav-link(href="#")
+								i.fa.fa-home
+								span.pl-1 Hệ thống 
+									b 96 
+									span cửa hàng
+			.menu-reponsive-extra
+				.menu-reponsive-extra-giay
+					.title_reponsive-extra-giay
+						a.nav-link.p-0
+							i.fa.fa-chevron-left
+							span GIÀY
+						ul.navbar-nav.content_reponsive-extra-giay
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày cao gót
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày xăng đan
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày xăng đap
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày xăng búp bê
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày xăng boots
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Giày xăng guốc
+				.menu-reponsive-extra-tui
+					.title_reponsive-extra-tui
+						a.nav-link.p-0
+							i.fa.fa-chevron-left
+							span TÚI
+						ul.navbar-nav.content_reponsive-extra-tui
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Túi cở nhỏ
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Túi cở trung bình
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Túi cở lớn
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Balo nam
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Balo nữ
+				.menu-reponsive-extra-phukien
+					.title_reponsive-extra-phukien
+						a.nav-link.p-0
+							i.fa.fa-chevron-left
+							span PHỤ KIỆN
+						ul.navbar-nav.content_reponsive-extra-phukien
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Mắc kính
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Dây nịch
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Trang sức
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Vớ
+							li.nav-item
+								a.nav-link.menu-sub-a(href="#") Bao tay
+			//-SHOW BLOCK SEARCH//-SHOW BLOCK SEARCH//-SHOW BLOCK SEARCH
+			.show-block-search
+				.boc-block-search
+					.title-block-search.p-4
+						span TÌM KIẾM
+						i.fa.fa-times
+					.form-block-search.pl-2.pr-2
+						input.form-control(type="search" placeholder='Tìm kiếm sản phẩm')
+						i.fa.fa-search
