@@ -15,29 +15,46 @@ header
 	// HEADER 1// HEADER 1// HEADER 1// HEADER 1
 
 	// HEADER 2// HEADER 2// HEADER 2// HEADER 2
+	.before-header2
+		&:before
+			content: ''
+			display: block
+			background-color: #000000a8
+			position: absolute
+			z-index: 9
+			top: -1rem
+			right: 10.6rem
+			width: 63%
+			height: 1000%
+			+media-breakpoint-up(md)
+				position: relative !important
+				background-color: none 
+	.header2-search
+		visibility: hidden
+		&:before
+			content: ''
+			display: block
+			background-color: #000000a8
+			position: absolute
+			z-index: 9
+			top: 0rem
+			right: 0rem
+			width: 100%
+			height: 1000%
+			+media-breakpoint-up(md)
+				visibility: hidden
 	.header2
 		padding: 10px 40px
 		position: relative
 		background-color: #ffffff
-		transition: right 0.5s ease-in-out
-		&:before
-			content: ''
-			display: block
-			background-color: #1a191900
-			position: absolute
-			z-index: 0
-			top: 0.1rem
-			right: 116px
-			width: 63%
-			height: 100%
+		transition: all 0.4s ease-in-out
 		+media-breakpoint-up(md)
 			left: 0rem
 			right: 0rem !important
-			background-color: rgba(26, 25, 25, 0) !important
 			position: unset !important
 		button.navbar-toggler
 			position: absolute
-			left: -2rem
+			left: 0rem
 			top: 0.7rem
 			color: black
 			border: 2px solid black
@@ -49,7 +66,7 @@ header
 				width: 150px
 				height: 23px
 			+media-breakpoint-down(md)
-				padding-left: 3rem
+				padding-left: 4rem
 		.form-search-1,.form-search-2
 			position: relative
 			input
@@ -61,6 +78,9 @@ header
 				color: gray
 			&:hover
 				cursor: pointer
+			+media-breakpoint-up(md)
+				i.menu-cart.fa.fa-shopping-cart
+					display: none
 		ul.navbar-nav
 			color: #252a2b
 			font-size: 15px
@@ -86,9 +106,29 @@ header
 		+media-breakpoint-down(md)
 			.form-search-2
 				display: block
+		// Responsive hình banner
+		.banner-hinh
+			img.img-fluid
+				transition: left 0.4s ease-in-out
+				left: 0rem
+				// position: fixed
+				width: 100%
+				+media-breakpoint-up(md)
+					left: 0rem !important
+					position: unset !important
+			+media-breakpoint-up(md)
+				.reponsive-lg
+					display: block
+				.reponsive-md
+					display: none
+			+media-breakpoint-down(md)
+				.reponsive-lg
+					display: none
+				.reponsive-md
+					display: block
 	.form-search-2
 		position: absolute !important
-		top: 1.7rem
+		top: 1.1rem
 		right: 7rem
 		input
 			display: none
@@ -100,7 +140,8 @@ header
 			+media-breakpoint-down(md)
 				right: -4rem !important
 			+media-breakpoint-up(md)
-				right: 7rem !important
+				top: 4.4rem !important
+				right: 2rem !important
 			&:hover
 				cursor: pointer
 		.nav-link
@@ -133,6 +174,8 @@ header
 			padding: 0rem 17rem
 			opacity: 0
 			visibility: hidden
+			.row
+				background-color: white
 			.list-giai
 				&:hover
 					box-shadow: 0px 0px !important
@@ -144,7 +187,7 @@ header
 	// MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE // MENU HIDE 
 
 	// MENU RESPONSIVE //// MENU RESPONSIVE //// MENU RESPONSIVE //
-	+media-breakpoint-up(md)
+	+media-breakpoint-up(lg)
 		.menu-reponsive-main,.menu-reponsive-extra
 			display: none
 	.menu-reponsive-main,.menu-reponsive-extra
@@ -234,14 +277,13 @@ header
 	.show-block-search
 		width: 0%
 		height: 100%
-		background-color: #f5f5f50a
 		position: absolute
 		right: 0rem
 		overflow: hidden
 		z-index: 99
 		top: 0rem
 		visibility: hidden
-		+media-breakpoint-up(md)
+		+media-breakpoint-up(lg)
 			display: none
 		.boc-block-search
 			transition: all 0.3s ease-in-out

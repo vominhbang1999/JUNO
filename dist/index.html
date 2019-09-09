@@ -97,7 +97,7 @@
           </div>
           <div class="col-md-3 col-lg-2 d-flex justify-content-center"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span class="pl-1">Giỏ hàng</span><b>(0)</b></a></div>
         </div>
-        <div class="row header2">
+        <div class="row header2 mt-2">
           <div class="form-search-2">
             <input class="form-control" id="search_show" type="search" name=""><i class="fa fa-search"></i><a class="nav-link" href="#"><i class="menu-cart fa fa-shopping-cart"></i></a>
           </div>
@@ -168,6 +168,15 @@
               </div>
             </div>
           </nav>
+          <div class="row banner-hinh">
+            <div class="col-sm-12 col-md-12">
+              <figure class="reponsive-lg"><img class="img-fluid" src="./img/banner_home.jpg" alt=""></figure>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <figure class="reponsive-md"><img class="img-fluid" src="./img/banner_home_responsvie.jpg" alt=""></figure>
+            </div>
+            <div class="header2-search"></div>
+          </div>
         </div>
         <div class="menu-reponsive-main">
           <div class="menu-reponsive-main-1">
@@ -232,10 +241,190 @@
     </header><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
-      <section class="banner">
+      <section class="sanpham-hot">
         <div class="container-fluid">
           <div class="row">
-            <figure><img class="img-fluid" src="./img/banner_home.jpg" alt=""></figure>
+            <div class="col-md-4">
+              <div class="sanpham-box-hot">
+                <figure><img class="img-fluid" src="./img/sp_hot_1.jpg" alt="" srcset=""></figure>
+                <div class="info-sanpham-hot">
+                  <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                  <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sanpham-box-hot">
+                <figure><img class="img-fluid" src="./img/sp_hot_2.jpg" alt="" srcset=""></figure>
+                <div class="info-sanpham-hot">
+                  <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                  <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sanpham-box-hot">
+                <figure><img class="img-fluid" src="./img/sp_hot_3.jpg" alt="" srcset=""></figure>
+                <div class="info-sanpham-hot">
+                  <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                  <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sanpham-hot-slider sanpham-hot">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="sanpham-box-hot">
+              <figure><img class="img-fluid" src="./img/sp_hot_1.jpg" alt="" srcset=""></figure>
+              <div class="info-sanpham-hot">
+                <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sanpham-box-hot">
+              <figure><img class="img-fluid" src="./img/sp_hot_2.jpg" alt="" srcset=""></figure>
+              <div class="info-sanpham-hot">
+                <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sanpham-box-hot">
+              <figure><img class="img-fluid" src="./img/sp_hot_3.jpg" alt="" srcset=""></figure>
+              <div class="info-sanpham-hot">
+                <h5>Túi xách nhỏ nắp gập in chuyển màu</h5>
+                <div class="buton"><a class="nav-link" href="#">Xem chi tiết</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="giay mt-5">
+        <div class="container">
+          <div class="row">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#maumoive" role="tab" aria-controls="maumoive" aria-selected="true">Mẫu mới về</a></li>
+              <li class="nav-item"><a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#caogot" role="tab" aria-controls="caogot" aria-selected="false">Cao gót</a></li>
+              <li class="nav-item"><a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#xangdang" role="tab" aria-controls="xangdang" aria-selected="false">Xăng đang</a></li>
+              <li class="nav-item"><a class="nav-link" id="xangdang-tab" data-toggle="pill" href="#bupbe" role="tab" aria-controls="bupbe" aria-selected="false">Búp bê</a></li>
+            </ul>
+          </div>
+          <div class="row mt-5">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="maumoive" role="tabpanel" aria-labelledby="maumoive-tab">
+                <div class="box-sanpham-main">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="sanpham-in-box">
+                        <div class="hinh active-hinh" id="hinh1">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hinh" id="hinh2">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/den_cg07080_3_697063db2a274d708792bc0b8b26eb6c.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/den_cg07080_7_2466e85bebec42b891c5e0f652bc1068.jpg" alt=""></figure>
+                        </div>
+                        <div class="hover-mau-nen"><a class="nav-link mauxam" href="">
+                            <figure class="active"><img class="img-fluid" src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg" alt="#hinh1"></figure></a><a class="nav-link mauhong" href="">
+                            <figure><img class="img-fluid" src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg" alt="#hinh2"></figure></a><a class="nav-link mauxanh" href="">
+                            <figure><img class="img-fluid" src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg" alt="#hinh3"></figure></a><a class="nav-link mauden" href="">
+                            <figure><img class="img-fluid" src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg" alt="#hinh4"></figure></a><a class="nav-link mautrang" href="">
+                            <figure><img class="img-fluid" src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg" alt="#hinh5"></figure></a></div>
+                        <div class="info-sanpham-in-box"><span>Giày cao gót mũi nhọn gót thanh</span>
+                          <p>319.000 vnđ</p>
+                          <h4>MẪU MỚI</h4>
+                        </div>
+                        <div class="mua-sanpham"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span>Mua nhanh</span></a><a class="nav-link" href="#"><i class="fa fa-eye"></i><span>Xem chi tiết</span></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sanpham-in-box">
+                        <div class="hinh active-hinh" id="hinh1">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hinh" id="hinh2">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hover-mau-nen"><a class="nav-link mauxam" href="">
+                            <figure class="active"><img class="img-fluid" src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg" alt=""></figure></a><a class="nav-link mauhong" href="">
+                            <figure><img class="img-fluid" src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg" alt=""></figure></a><a class="nav-link mauxanh" href="">
+                            <figure><img class="img-fluid" src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg" alt=""></figure></a><a class="nav-link mauden" href="">
+                            <figure><img class="img-fluid" src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg" alt=""></figure></a><a class="nav-link mautrang" href="">
+                            <figure><img class="img-fluid" src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg" alt=""></figure></a></div>
+                        <div class="info-sanpham-in-box"><span>Giày cao gót mũi nhọn gót thanh</span>
+                          <p>319.000 vnđ</p>
+                          <h4>MẪU MỚI</h4>
+                        </div>
+                        <div class="mua-sanpham"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span>Mua nhanh</span></a><a class="nav-link" href="#"><i class="fa fa-eye"></i><span>Xem chi tiết</span></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sanpham-in-box">
+                        <div class="hinh active-hinh" id="hinh1">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hinh" id="hinh2">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hover-mau-nen"><a class="nav-link mauxam" href="">
+                            <figure class="active"><img class="img-fluid" src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg" alt=""></figure></a><a class="nav-link mauhong" href="">
+                            <figure><img class="img-fluid" src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg" alt=""></figure></a><a class="nav-link mauxanh" href="">
+                            <figure><img class="img-fluid" src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg" alt=""></figure></a><a class="nav-link mauden" href="">
+                            <figure><img class="img-fluid" src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg" alt=""></figure></a><a class="nav-link mautrang" href="">
+                            <figure><img class="img-fluid" src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg" alt=""></figure></a></div>
+                        <div class="info-sanpham-in-box"><span>Giày cao gót mũi nhọn gót thanh</span>
+                          <p>319.000 vnđ</p>
+                          <h4>MẪU MỚI</h4>
+                        </div>
+                        <div class="mua-sanpham"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span>Mua nhanh</span></a><a class="nav-link" href="#"><i class="fa fa-eye"></i><span>Xem chi tiết</span></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="sanpham-in-box">
+                        <div class="hinh active-hinh" id="hinh1">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hinh" id="hinh2">
+                          <figure class="sanpham"><img class="img-fluid" src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg" alt=""></figure>
+                          <figure class="demo"><img class="img-fluid" src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg" alt=""></figure>
+                        </div>
+                        <div class="hover-mau-nen"><a class="nav-link mauxam" href="">
+                            <figure class="active"><img class="img-fluid" src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg" alt=""></figure></a><a class="nav-link mauhong" href="">
+                            <figure><img class="img-fluid" src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg" alt=""></figure></a><a class="nav-link mauxanh" href="">
+                            <figure><img class="img-fluid" src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg" alt=""></figure></a><a class="nav-link mauden" href="">
+                            <figure><img class="img-fluid" src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg" alt=""></figure></a><a class="nav-link mautrang" href="">
+                            <figure><img class="img-fluid" src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg" alt=""></figure></a></div>
+                        <div class="info-sanpham-in-box"><span>Giày cao gót mũi nhọn gót thanh</span>
+                          <p>319.000 vnđ</p>
+                          <h4>MẪU MỚI</h4>
+                        </div>
+                        <div class="mua-sanpham"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span>Mua nhanh</span></a><a class="nav-link" href="#"><i class="fa fa-eye"></i><span>Xem chi tiết</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="caogot" role="tabpanel" aria-labelledby="caogot-tab">
+                <p>ahihi1p ahihi1</p>
+              </div>
+              <div class="tab-pane fade" id="xangdang" role="tabpanel" aria-labelledby="xangdang-tab">
+                <p>ahihi1p ahihi1p ahihi1</p>
+              </div>
+              <div class="tab-pane fade" id="bupbe" role="tabpanel" aria-labelledby="xangdang-tab">
+                <p>ahihi1p ahihi1p ahihi1 ádfghjk</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

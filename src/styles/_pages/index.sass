@@ -1,35 +1,134 @@
-.banner
-	z-index: 100
-	figure
-		overflow: hidden
+.sanpham-hot
+	margin-top: 0rem
+	padding: 0rem 5rem
+	+media-breakpoint-down(md)
+		padding: 0rem 0rem
+		display: none
+	+media-breakpoint-up(md)
+		top: 43rem !important
+	.sanpham-box-hot
+		figure
+			display: flex
+			justify-content: center
+			+media-breakpoint-down(md)
+				padding-top: 1rem
+		.info-sanpham-hot
+			text-align: center
+			font-family: 'Quicksand', sans-serif
+			transition: all 0.2s ease-in-out
+			.buton
+				display: flex
+				justify-content: center
+				align-items: center
+				a.nav-link
+					padding: 0.5rem
+					border: 1px solid black
+					width: 125px
+					font-family: 'Quicksand', sans-serif
+					color: black
+					text-transform: uppercase
+					&:hover
+						color: white
+						background-color: black
+.sanpham-hot-slider
+	display: block
+	@media (min-width: 900px)
+		display: none
+	.owl-item
 		img
-			transition: all 0.4s ease-in-out	
+			padding: 3rem
+	.owl-nav
+		button.owl-prev
 			position: absolute
-			top: 8rem
-			left: 0px
-.bochinh
-	&:before
-		content: ''
-		display: block
-		background-color: #1a1919bd
-		position: absolute
-		z-index: 9999999999999999
-		top: 6rem
-		right: 0%
-		width: 36%
-		height: 100%
-		+media-breakpoint-up(md)
-			background-color: rgba(26, 25, 25, 0) !important
-.bochinh-search
-	&:before
-		content: ''
-		display: block
-		background-color: #1a1919bd
-		position: absolute
-		z-index: 9999999999999999
-		top: 0rem
-		left: -1rem
-		width: 54%
-		height: 100%
-		+media-breakpoint-up(md)
-			background-color: rgba(26, 25, 25, 0) !important
+			font-size: 40px
+			left: 1rem
+			top: 40%
+		button.owl-next
+			position: absolute
+			font-size: 40px
+			right: 1rem
+			top: 40%
+		&:hover
+			background-color: none !important
+	.owl-dots
+		display: none
+
+.giay
+	ul#pills-tab
+		.nav-link.active
+			box-shadow: 0px 2px
+			border-radius: 0px
+			&:hover
+				box-shadow: 0px 2px	
+		.nav-link
+			background-color: white !important
+			color: black !important
+			border-radius: 0px !important
+			text-transform: uppercase
+			font-family: 'Quicksand', sans-serif
+			font-size: 14px
+			font-weight: bold
+			&:hover
+				box-shadow: 0px 2px	!important
+
+	.box-sanpham-main
+		.sanpham-in-box
+			transition: all 0.2s ease-in-out
+			&:hover
+				box-shadow: 0px 1px 2px 0px #80808054
+				.mua-sanpham
+					visibility: unset
+
+			.hinh.active-hinh
+				display: block
+				padding: 1rem
+				&:hover
+					.sanpham
+						display: none
+					.demo
+						display: block
+				.demo
+					display: none
+			.hinh
+				display: none
+			.hover-mau-nen
+				display: flex
+				justify-content: center
+				align-items: center
+				a.nav-link
+					padding: 0rem 0.3rem
+				figure
+					padding: 1px
+					border-radius: 50%
+					width: 25px
+					img
+						border-radius: 50%
+				figure.active
+					box-shadow: 0px 0px 5px grey
+		.info-sanpham-in-box
+			text-align: center
+			span
+				font-family: 'Quicksand', sans-serif
+				font-size: 14px
+			p
+				font-weight: bold
+			h4
+				font-family: 'Quicksand', sans-serif
+				font-size: 13px
+		.mua-sanpham
+			visibility: hidden
+			display: flex
+			justify-content: center
+			padding: 0.2rem
+			background-color: black
+			a.nav-link
+				color: white
+				i
+					padding-right: 0.2rem
+			a:first-child
+				border-right: 1px solid white
+		
+
+
+
+

@@ -35,25 +35,23 @@ $(function () {
 $(document).ready(function () {
 	// FORM SEARCH
 	$('.form-search-2 i.fa.fa-search').on('click', function () {
-		$('body').css({ 'background-color': '#2f2f2f63' });
-		$('.row.header2').css({ 'background-color': 'rgba(47, 47, 47, 0)' });
 		if ($('.show-block-search').css('z-index') == 99) {
-			$('.show-block-search').css({ 'z-index': 999, 'width': '60%', 'visibility': 'unset' });
+			$('.show-block-search').css({ 'z-index': 9999, 'width': '60%', 'visibility': 'unset' });
 			$('.boc-block-search').css({ 'right': '0rem' });
 			$('.row.header2').css({ 'right': '17rem' });
-			$('.banner img').css({ 'left': '-248px', 'top': '6rem' });
-			$('.banner figure').addClass('bochinh-search');
+			$('.banner-hinh .header2-search').css({ 'visibility': 'unset' });
+			$('.banner-hinh img').css({ 'left': '-17rem', 'top': '6rem' });
+			$('body').css({ 'overflow': 'hidden' });
 		} else {}
 	});
 	$('.title-block-search i.fa.fa-times').on('click', function () {
-		$('body').css({ 'background-color': 'rgba(47, 47, 47, 0)' });
-		$('.row.header2').css({ 'background-color': 'rgba(47, 47, 47, 0)' });
-		if ($('.show-block-search').css('z-index') == 999) {
+		if ($('.show-block-search').css('z-index') == 9999) {
 			$('.show-block-search').css({ 'z-index': 99, 'visibility': 'hidden' });
 			$('.boc-block-search').css({ 'right': '-20rem' });
-			$('.row.header2').css({ 'right': '0rem' });
-			$('.banner img').css({ 'left': '0px' });
-			$('.banner figure').removeClass('bochinh-search');
+			$('.row.header2').css({ 'right': '0rem' }).removeClass('.header2-search');
+			$('.banner-hinh img').css({ 'left': '0em', 'top': '6rem' });
+			$('.banner-hinh .header2-search').css({ 'visibility': 'hidden' });
+			$('body').css({ 'overflow': 'auto' });
 		} else {}
 	});
 
@@ -95,22 +93,22 @@ $(document).ready(function () {
 	$('button.navbar-toggler').click(function () {
 		if ($('.menu-reponsive-main').css('visibility') == 'hidden') {
 			$('.menu-reponsive-main').css({ 'transform': 'translateX(-15px)', 'visibility': 'unset', 'top': '0rem', 'left': '1rem' });
-			$('body').css({ 'background-color': '#2f2f2f63' });
-			$('.row.header2').css({ 'position': 'fixed', 'right': '-8.9rem', 'z-index': 99999, 'background-color': '#1a1919bd', 'top': '1px' });
+			$('body').css({ 'overflow': 'hidden' });
+			$('.row.header2').css({ 'position': 'fixed', 'right': '-12.5rem', 'z-index': 9999, 'top': '0px' }).addClass('before-header2');
 			$('.form-search-2').css({ 'display': 'none' });
-			$('.banner img').css({ 'left': '319px' });
-			$('.banner figure').addClass('bochinh');
+			$('.banner-hinh img').css({ 'position': 'fixed', 'left': '22.7rem', 'width': '100%' });
+			$('.sanpham-hot').css({ 'top': '40rem', 'position': 'absolute' });
 		} else {}
 	});
 
 	$('.header2').click(function () {
 		if ($('.menu-reponsive-main').css('visibility') !== 'hidden') {
 			$('.menu-reponsive-main').css({ 'transform': 'translateX(-400px)', 'visibility': 'hidden' });
-			$('body').css({ 'background-color': 'rgba(47, 47, 47, 0)' });
-			$('.row.header2').css({ 'position': 'relative', 'right': '0rem', 'background-color': '#1a191900' });
+			$('body').css({ 'overflow': 'unset' });
+			$('.row.header2').css({ 'position': 'relative', 'right': '0rem', 'background-color': '#1a191900' }).removeClass('before-header2');
 			$('.form-search-2').css({ 'display': 'block' });
-			$('.banner figure').removeClass('bochinh').css({ 'left': '319px' });
-			$('.banner figure img').css({ 'left': '0px' });
+			$('.banner-hinh img').css({ 'position': 'unset', 'left': '0rem', 'width': '100%' });
+			$('.sanpham-hot').css({ 'top': '41rem', 'position': 'unset' });
 		} else {}
 	});
 	// SHOW MENU CHI TIẾT
@@ -143,26 +141,36 @@ $(document).ready(function () {
 });
 // HEADER 
 
-// MAIN //  
-$(document).ready(function () {
-	// $(window).resize(function() {
-	// 	if (window.matchMedia('(max-width: 990px)').matches) {
-	// 		// functionality for screens smaller than 1200px
-	// 		$('.banner img.img-fluid').attr('src', './img/banner_home_responsvie.jpg')
-	// 	} else if (window.matchMedia('(min-width: 990px)').matches) {
-	// 		$('.banner img.img-fluid').attr('src', './img/banner_home.jpg')
-	// 	}
-	// });
-	$(window).resize(function () {
-		var width = $(window).width();
-		if (width < 990) {
-			$('.banner img.img-fluid').attr('src', './img/banner_home_responsvie.jpg');
-			$('.banner img.img-fluid').css({ 'position': 'fixed' });
-		} else if (width >= 990) {
-			$('.banner img.img-fluid').attr('src', './img/banner_home.jpg');
-			$('.banner img.img-fluid').css({ 'position': 'unset' });
+// MAIN // MAIN // MAIN // MAIN // MAIN // MAIN // MAIN // MAIN // MAIN 
+
+// SLIDER
+$('.owl-carousel').owlCarousel({
+	loop: true,
+	margin: 10,
+	nav: true,
+	responsive: {
+		0: {
+			items: 1
+		},
+		600: {
+			items: 1
+		},
+		1000: {
+			items: 3
 		}
-	});
+	}
 });
-// MAIN //
+
+// GIAY
+$('.sanpham-in-box .hover-mau-nen figure').hover(function () {
+	// HIỂN THỊ MÀU HOVER MÀU
+	$(this).parents('.hover-mau-nen').find('figure').removeClass('active');
+	$(this).addClass('active');
+	// HIỂN THỊ HOVER SẢN PHẨM
+	var a = $(this).find('img').attr('alt');
+	$('.sanpham-in-box').find(a).addClass('active-hinh');
+}, function () {
+	$(this).addClass('active');
+	$('.sanpham-in-box').find('hinh').removeClass('active-hinh');
+});
 //# sourceMappingURL=main.js.map

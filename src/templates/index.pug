@@ -9,9 +9,242 @@ block variables
 //- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.banner
+	section.sanpham-hot
 		.container-fluid
 			.row
-				figure
-					img.img-fluid(src="./img/banner_home.jpg", alt="")
+				.col-md-4
+					.sanpham-box-hot
+						figure
+							img.img-fluid(src="./img/sp_hot_1.jpg", alt="", srcset="")
+						.info-sanpham-hot
+							h5 Túi xách nhỏ nắp gập in chuyển màu
+							.buton
+								a.nav-link(href="#") Xem chi tiết
+				.col-md-4
+					.sanpham-box-hot
+						figure
+							img.img-fluid(src="./img/sp_hot_2.jpg", alt="", srcset="")
+						.info-sanpham-hot
+							h5 Túi xách nhỏ nắp gập in chuyển màu
+							.buton
+								a.nav-link(href="#") Xem chi tiết
+				.col-md-4
+					.sanpham-box-hot
+						figure
+							img.img-fluid(src="./img/sp_hot_3.jpg", alt="", srcset="")
+						.info-sanpham-hot
+							h5 Túi xách nhỏ nắp gập in chuyển màu
+							.buton
+								a.nav-link(href="#") Xem chi tiết
+	section.sanpham-hot-slider.sanpham-hot
+		.owl-carousel.owl-theme
+			.item
+				.sanpham-box-hot
+					figure
+						img.img-fluid(src="./img/sp_hot_1.jpg", alt="", srcset="")
+					.info-sanpham-hot
+						h5 Túi xách nhỏ nắp gập in chuyển màu
+						.buton
+							a.nav-link(href="#") Xem chi tiết
+			.item
+				.sanpham-box-hot
+					figure
+						img.img-fluid(src="./img/sp_hot_2.jpg", alt="", srcset="")
+					.info-sanpham-hot
+						h5 Túi xách nhỏ nắp gập in chuyển màu
+						.buton
+							a.nav-link(href="#") Xem chi tiết
+			.item
+				.sanpham-box-hot
+					figure
+						img.img-fluid(src="./img/sp_hot_3.jpg", alt="", srcset="")
+					.info-sanpham-hot
+						h5 Túi xách nhỏ nắp gập in chuyển màu
+						.buton
+							a.nav-link(href="#") Xem chi tiết
+	section.giay.mt-5
+		.container
+			.row
+				ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
+					li.nav-item
+						a#pills-home-tab.nav-link.active(data-toggle='pill' href='#maumoive' role='tab' aria-controls='maumoive' aria-selected='true') Mẫu mới về
+					li.nav-item
+						a#pills-profile-tab.nav-link(data-toggle='pill' href='#caogot' role='tab' aria-controls='caogot' aria-selected='false') Cao gót
+					li.nav-item
+						a#pills-contact-tab.nav-link(data-toggle='pill' href='#xangdang' role='tab' aria-controls='xangdang' aria-selected='false') Xăng đang
+					li.nav-item
+						a#xangdang-tab.nav-link(data-toggle='pill' href='#bupbe' role='tab' aria-controls='bupbe' aria-selected='false') Búp bê
+			.row.mt-5
+				#pills-tabContent.tab-content
+					#maumoive.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='maumoive-tab')
+						.box-sanpham-main
+							.row
+								.col-md-3
+									.sanpham-in-box
+										.hinh#hinh1.active-hinh
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hinh#hinh2
+											figure.sanpham
+												img.img-fluid(src="./img/den_cg07080_3_697063db2a274d708792bc0b8b26eb6c.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/den_cg07080_7_2466e85bebec42b891c5e0f652bc1068.jpg", alt="")
+										.hover-mau-nen
+											a.nav-link.mauxam(href="")
+												figure.active
+													img.img-fluid(src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg", alt="#hinh1")
+											a.nav-link.mauhong(href="")
+												figure
+													img.img-fluid(src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg", alt="#hinh2")
+											a.nav-link.mauxanh(href="")
+												figure
+													img.img-fluid(src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg", alt="#hinh3")
+											a.nav-link.mauden(href="")
+												figure
+													img.img-fluid(src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg", alt="#hinh4")
+											a.nav-link.mautrang(href="")
+												figure
+													img.img-fluid(src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg", alt="#hinh5")
+										.info-sanpham-in-box
+											span Giày cao gót mũi nhọn gót thanh
+											p 319.000 vnđ
+											h4 MẪU MỚI
+										.mua-sanpham
+											a.nav-link(href="#")
+												i.fa.fa-shopping-cart
+												span Mua nhanh
+											a.nav-link(href="#")
+												i.fa.fa-eye
+												span Xem chi tiết
+								.col-md-3
+									.sanpham-in-box
+										.hinh#hinh1.active-hinh
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hinh#hinh2
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hover-mau-nen
+											a.nav-link.mauxam(href="")
+												figure.active
+													img.img-fluid(src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg", alt="")
+											a.nav-link.mauhong(href="")
+												figure
+													img.img-fluid(src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg", alt="")
+											a.nav-link.mauxanh(href="")
+												figure
+													img.img-fluid(src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg", alt="")
+											a.nav-link.mauden(href="")
+												figure
+													img.img-fluid(src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg", alt="")
+											a.nav-link.mautrang(href="")
+												figure
+													img.img-fluid(src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg", alt="")
+										.info-sanpham-in-box
+											span Giày cao gót mũi nhọn gót thanh
+											p 319.000 vnđ
+											h4 MẪU MỚI
+										.mua-sanpham
+											a.nav-link(href="#")
+												i.fa.fa-shopping-cart
+												span Mua nhanh
+											a.nav-link(href="#")
+												i.fa.fa-eye
+												span Xem chi tiết
+								.col-md-3
+									.sanpham-in-box
+										.hinh#hinh1.active-hinh
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hinh#hinh2
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hover-mau-nen
+											a.nav-link.mauxam(href="")
+												figure.active
+													img.img-fluid(src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg", alt="")
+											a.nav-link.mauhong(href="")
+												figure
+													img.img-fluid(src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg", alt="")
+											a.nav-link.mauxanh(href="")
+												figure
+													img.img-fluid(src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg", alt="")
+											a.nav-link.mauden(href="")
+												figure
+													img.img-fluid(src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg", alt="")
+											a.nav-link.mautrang(href="")
+												figure
+													img.img-fluid(src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg", alt="")
+										.info-sanpham-in-box
+											span Giày cao gót mũi nhọn gót thanh
+											p 319.000 vnđ
+											h4 MẪU MỚI
+										.mua-sanpham
+											a.nav-link(href="#")
+												i.fa.fa-shopping-cart
+												span Mua nhanh
+											a.nav-link(href="#")
+												i.fa.fa-eye
+												span Xem chi tiết
+								.col-md-3
+									.sanpham-in-box
+										.hinh#hinh1.active-hinh
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hinh#hinh2
+											figure.sanpham
+												img.img-fluid(src="./img/nau_cg07080_3_aaa9fd8c9e27426da303a00de4f4a6a8_grande.jpg", alt="")
+											figure.demo
+												img.img-fluid(src="./img/nau_cg07080_7_7f0c9dc0c13e488485967d0d8b14bfe0.jpg", alt="")
+										.hover-mau-nen
+											a.nav-link.mauxam(href="")
+												figure.active
+													img.img-fluid(src="./img/color_nau_cg07080_505a55fb5b5c45e5a109980f2bb46325_small.jpg", alt="")
+											a.nav-link.mauhong(href="")
+												figure
+													img.img-fluid(src="./img/color_hong_cg07080_94eb8237634a4efe87eae4e792b7e40d_small.jpg", alt="")
+											a.nav-link.mauxanh(href="")
+												figure
+													img.img-fluid(src="./img/color_xanh_cg07080_2528afd6b8be40c7a4d35425aa8e8b4d_small.jpg", alt="")
+											a.nav-link.mauden(href="")
+												figure
+													img.img-fluid(src="./img/color_den_cg07080_e1a00eb33e38479e8d39f2acf673ff93_small.jpg", alt="")
+											a.nav-link.mautrang(href="")
+												figure
+													img.img-fluid(src="./img/color_trang_cg07080_2d6ca4e0b9fb4128af7547de89044eca_small.jpg", alt="")
+										.info-sanpham-in-box
+											span Giày cao gót mũi nhọn gót thanh
+											p 319.000 vnđ
+											h4 MẪU MỚI
+										.mua-sanpham
+											a.nav-link(href="#")
+												i.fa.fa-shopping-cart
+												span Mua nhanh
+											a.nav-link(href="#")
+												i.fa.fa-eye
+												span Xem chi tiết
+								
+								
+
+					#caogot.tab-pane.fade(role='tabpanel' aria-labelledby='caogot-tab')
+						p ahihi1p ahihi1
+					#xangdang.tab-pane.fade(role='tabpanel' aria-labelledby='xangdang-tab')
+						p ahihi1p ahihi1p ahihi1
+					#bupbe.tab-pane.fade(role='tabpanel' aria-labelledby='xangdang-tab')
+						p ahihi1p ahihi1p ahihi1 ádfghjk
+
+
+
 
